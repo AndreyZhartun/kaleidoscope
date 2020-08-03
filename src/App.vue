@@ -2,25 +2,25 @@
   <v-app>
     <AppBar />
     <v-content>
-      <HelloWorld />
+      <Grid />
     </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+import Grid from "./components/Grid";
 import AppBar from "./components/AppBar";
 
 export default {
   name: "App",
 
   components: {
-    HelloWorld,
-    AppBar
+    Grid,
+    AppBar,
   },
 
   data: () => ({
     //
-  })
+  }),
 };
 </script>

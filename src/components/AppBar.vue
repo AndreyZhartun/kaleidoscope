@@ -1,37 +1,30 @@
 <template>
-  <v-app-bar app color="primary" dark>
+  <v-app-bar app color="#46433A" dark dense>
     <div class="d-flex align-center">
-      <v-img
-        alt="Vuetify Logo"
-        class="shrink mr-2"
-        contain
-        src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-        transition="scale-transition"
-        width="40"
-      />
+      <v-icon>mdi-view-grid</v-icon>&nbsp;&nbsp;&nbsp;&nbsp;
+      <span>kaleidoscope</span>
 
-      <v-img
-        alt="Vuetify Name"
-        class="shrink mt-1 hidden-sm-and-down"
-        contain
-        min-width="100"
-        src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-        width="100"
-      />
+      <v-btn href="https://github.com/AndreyZhartun/kaleidoscope" target="_blank" text>
+        <v-icon>mdi-github</v-icon>
+        <!--<span class="mr-1">Github</span>-->
+        <span>Github</span>
+      </v-btn>
+
+      <v-btn href="https://andreyzhartun.github.io" target="_blank" text>
+        <v-icon>mdi-card-account-details</v-icon>
+        <span>Про меня</span>
+      </v-btn>
     </div>
 
     <v-spacer></v-spacer>
 
-    <v-btn href="https://github.com/vuetifyjs/vuetify/releases/latest" target="_blank" text>
-      <span class="mr-2">Latest Release</span>
-      <v-icon>mdi-open-in-new</v-icon>
-    </v-btn>
+    <span>Vuetify, ...</span>
   </v-app-bar>
 </template>
 
 <script>
 export default {
-  name: "AppBar"
+  name: "AppBar",
 };
 </script>
 
