@@ -1,11 +1,7 @@
 <template>
   <v-container>
     <v-row class="text-center">
-      <!--<v-col cols="12">
-        <v-img :src="require('../assets/logo.svg')" class="my-3" contain height="100" />
-      </v-col>-->
-
-      <v-col class="mb-4">
+      <v-col>
         <h1 class="headline font-weight-bold mb-3">{{post.title}}</h1>
 
         <a :href="post.url" class="subheading font-weight-regular">{{post.url.split('/')[2]}}</a>
@@ -36,6 +32,9 @@ export default {
     id: {
       type: Number,
       required: true,
+    },
+    central: {
+      type: Boolean,
     },
     /*body: {
       type: String,

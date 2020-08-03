@@ -13,8 +13,18 @@
       <v-col cols="3">
         <GridItem :id="allPosts[centralIndex-1]" />
       </v-col>
-      <v-col cols="6">
-        <GridItem :id="allPosts[centralIndex]" />
+      <v-col cols="1">
+        <v-btn text>
+          <span>L</span>
+        </v-btn>
+      </v-col>
+      <v-col cols="4">
+        <GridItem :id="allPosts[centralIndex]" :central="true" />
+      </v-col>
+      <v-col cols="1">
+        <v-btn v-on:click="shift()" text>
+          <span>R</span>
+        </v-btn>
       </v-col>
       <v-col cols="3">
         <GridItem :id="allPosts[centralIndex+1]" />
@@ -74,6 +84,9 @@ export default {
           );
         })
         .catch((error) => console.error(error));
+    },
+    shift() {
+      this.centralIndex++;
     },
   },
 };
