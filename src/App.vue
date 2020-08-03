@@ -1,9 +1,9 @@
 <template>
   <v-app>
     <AppBar />
-    <v-content>
+    <v-main>
       <Grid />
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 
